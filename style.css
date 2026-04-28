@@ -8,6 +8,8 @@ DEFINITION DES PARAMETRES CONTENUS DANS LA VARIABLE ROOT
     --color-text-titre: white;
     --color-link: rgb(58, 15, 15);
     --color-link-hover: rgb(10, 255, 10);
+    --color-border: rgb(58, 15, 15);
+    --color-bg-submenu: #fa4925;
     --fontsize-link: 1rem;
 }
 
@@ -31,10 +33,10 @@ body {
     text-align: center;
 }
 
-/* ======================================================
+/* ===================================================================
 HEADER
-définition de la couleur de fond et mise en page du titre
-========================================================= */
+création de la bannière titre H1 + menu de NAV avec un sous-menu caché
+==================================================================== */
 .header {
     background-color: var(--color-bg-header);
     color: var(--color-text-titre);
@@ -47,13 +49,13 @@ définition de la couleur de fond et mise en page du titre
 }
 
 .header__nav {
-    border: solid blue 3px;
+    border: solid rgb(58, 15, 15) 1px;
 }
 
 .header__li {
     display: inline-block;
 }
-.header__a {
+.header__a, .submenu__actor {
     color: var(--color-link);
     font-size: var(--fontsize-link);
     margin: 0 10px;
@@ -63,7 +65,7 @@ définition de la couleur de fond et mise en page du titre
     position: relative;
 }
 
-.header__a:hover {
+.header__a:hover, .submenu__actor:hover {
     color: var(--color-link-hover);
     /* font-weight: 800; */
 }
@@ -73,7 +75,19 @@ définition de la couleur de fond et mise en page du titre
     display: none;
 }
 
+.header__li:hover .head__submenu {
+    display: block;
+    background-color: var(--color-bg-submenu);
+    border-color: 3px var(--color-border) solid;
+    border-bottom-left-radius: 20px;
+}
 
+
+/* ===============================================
+main
+setup des paramètres par défaut
+margin
+=================================================== */
 
 
 
