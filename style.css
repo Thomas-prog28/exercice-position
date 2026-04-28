@@ -6,11 +6,14 @@ DEFINITION DES PARAMETRES CONTENUS DANS LA VARIABLE ROOT
     --color-bg-header: #fa4925;
     --color-bg-footer: #fa4925;
     --color-bg-main: #fa4925;
+    --color-bg-submenu: #fa4925;
+    --color-bg-section: #fdccc3dc;
     --color-text-titre: white;
     --color-link: rgb(58, 15, 15);
     --color-link-hover: rgb(10, 255, 10);
     --color-border: rgb(58, 15, 15);
-    --color-bg-submenu: #fa4925;
+    
+
     --fontsize-link: 1rem;
 }
 
@@ -119,11 +122,26 @@ main {
 section film
 setup
 ============ */
-
-
-
-.re {
+.section__film {
     border: 5px black solid;
-    height: 250px;
+    height: 2500px;
     width: 100%;
+    background-color: var(--color-bg-section);
+}
+
+.section__div__gardiens {
+    border: blue 3px solid;
+    width: 100%;
+    height: 250px;
+    display: inline-block
+}
+
+.section__gardiens__img {
+    height: 200px;
+    width: auto;
+    display: inline-block;
+}
+
+.section__div__gardiens p{
+    width: 50%;
 }
