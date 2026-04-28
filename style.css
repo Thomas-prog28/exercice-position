@@ -5,6 +5,7 @@ DEFINITION DES PARAMETRES CONTENUS DANS LA VARIABLE ROOT
 :root {
     --color-bg-header: #fa4925;
     --color-bg-footer: #fa4925;
+    --color-bg-main: #fa4925;
     --color-text-titre: white;
     --color-link: rgb(58, 15, 15);
     --color-link-hover: rgb(10, 255, 10);
@@ -42,20 +43,24 @@ création de la bannière titre H1 + menu de NAV avec un sous-menu caché
     color: var(--color-text-titre);
     position: fixed;
     width: 100%;
-}
-
-.header__titre {
     height: 60px;
 }
 
 .header__nav {
     border: solid rgb(58, 15, 15) 1px;
+    position: fixed;
+    top: 60px;
+    height: 28px;
+    width: 100%;
+    background-color: var(--color-bg-header);
 }
 
 .header__li {
     display: inline-block;
 }
-.header__a, .submenu__actor {
+
+.header__a,
+.submenu__a {
     color: var(--color-link);
     font-size: var(--fontsize-link);
     margin: 0 10px;
@@ -65,31 +70,48 @@ création de la bannière titre H1 + menu de NAV avec un sous-menu caché
     position: relative;
 }
 
-.header__a:hover, .submenu__actor:hover {
-    color: var(--color-link-hover);
-    /* font-weight: 800; */
-}
-
-.head__submenu {
+.header__submenu {
     position: absolute;
     display: none;
 }
 
-.header__li:hover .head__submenu {
+.header__li:hover .header__submenu {
     display: block;
     background-color: var(--color-bg-submenu);
     border-color: 3px var(--color-border) solid;
     border-bottom-left-radius: 20px;
 }
 
+.header__a:hover,
+.submenu__a:hover {
+    color: var(--color-link-hover);
+    /* font-weight: 800; */
+}
+
+.submenu__li {
+    list-style: none;
+}
+
 
 /* ===============================================
 main
 setup des paramètres par défaut
-margin
+margin + bouton sticky
 =================================================== */
+main {
+    padding: 120px;
+    position: static;
+    background-color: var(--color-bg-main);
+}
 
-
+.main__backtop {
+    border: 3px solid black;
+    position: sticky;
+    width: 30px;
+    height: 30px;
+    top: 120px;
+    left: 300px;
+}
 
 
 
