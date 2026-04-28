@@ -1,0 +1,88 @@
+/* =====================================================
+DEFINITION DES PARAMETRES CONTENUS DANS LA VARIABLE ROOT
+======================================================== */
+
+:root {
+    --color-bg-header: #fa4925;
+    --color-bg-footer: #fa4925;
+    --color-text-titre: white;
+    --color-link: rgb(58, 15, 15);
+    --color-link-hover: rgb(10, 255, 10);
+    --fontsize-link: 1rem;
+}
+
+
+
+/* =================================
+RESET DES PARAMETRES HTML NAVIGATEUR
+==================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================================================================
+BODY
+définition de la font-family et alignement de tous les éléments enfants du body
+=============================================================================== */
+body {
+    font-family: 'exo 2';
+    text-align: center;
+}
+
+/* ======================================================
+HEADER
+définition de la couleur de fond et mise en page du titre
+========================================================= */
+.header {
+    background-color: var(--color-bg-header);
+    color: var(--color-text-titre);
+    position: fixed;
+    width: 100%;
+}
+
+.header__titre {
+    height: 60px;
+}
+
+.header__nav {
+    border: solid blue 3px;
+}
+
+.header__li {
+    display: inline-block;
+}
+.header__a {
+    color: var(--color-link);
+    font-size: var(--fontsize-link);
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.header__a:hover {
+    color: var(--color-link-hover);
+    /* font-weight: 800; */
+}
+
+.head__submenu {
+    position: absolute;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.re {
+    border: 5px black solid;
+    height: 250px;
+    width: 100%;
+}
