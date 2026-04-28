@@ -99,21 +99,26 @@ setup des paramètres par défaut
 margin + bouton sticky
 =================================================== */
 main {
-    padding: 120px;
+    padding: 87px;
     position: static;
     background-color: var(--color-bg-main);
 }
 
-.main__backtop {
-    border: 3px solid black;
+.main__backtop_button {
+    border: 1px solid black;
     position: sticky;
-    width: 30px;
-    height: 30px;
-    top: 120px;
-    left: 300px;
+    width: 80px;
+    height: 29px;
+    top: 92px;
+    left: 625px;
+    margin: 10px 0px;   
+    border-top-left-radius: 10px;
 }
 
-
+/* ==========
+section film
+setup
+============ */
 
 
 
