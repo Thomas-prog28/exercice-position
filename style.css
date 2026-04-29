@@ -133,15 +133,24 @@ setup
     border: blue 3px solid;
     width: 100%;
     height: 250px;
-    display: inline-block
+    /* display: inline-block; */
+    /* text-align: center; */
+    padding: 15px;
+    /* margin: 0; */
+    /* vertical-align: center; */
 }
 
 .section__gardiens__img {
+    display: inline-block;
+    width: 140px;
     height: 200px;
-    width: auto;
+    /* width: auto; */
+}
+
+.section__gardiens__titre {
     display: inline-block;
 }
 
-.section__div__gardiens p{
+/* .section__div__gardiens p{
     width: 50%;
-}
+} */
