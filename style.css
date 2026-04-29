@@ -12,7 +12,7 @@ DEFINITION DES PARAMETRES CONTENUS DANS LA VARIABLE ROOT
     --color-link: rgb(58, 15, 15);
     --color-link-hover: rgb(10, 255, 10);
     --color-border: rgb(58, 15, 15);
-    
+
 
     --fontsize-link: 1rem;
 }
@@ -34,7 +34,7 @@ définition de la font-family et alignement de tous les éléments enfants du bo
 =============================================================================== */
 body {
     font-family: 'exo 2';
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* ===================================================================
@@ -47,6 +47,7 @@ création de la bannière titre H1 + menu de NAV avec un sous-menu caché
     position: fixed;
     width: 100%;
     height: 60px;
+    text-align: center;
 }
 
 .header__nav {
@@ -56,6 +57,7 @@ création de la bannière titre H1 + menu de NAV avec un sous-menu caché
     height: 28px;
     width: 100%;
     background-color: var(--color-bg-header);
+    text-align: center;
 }
 
 .header__li {
@@ -113,8 +115,8 @@ main {
     width: 80px;
     height: 29px;
     top: 92px;
-    left: 625px;
-    margin: 10px 0px;   
+    left: 1753px;
+    margin: 10px 0px;
     border-top-left-radius: 10px;
 }
 
@@ -123,34 +125,49 @@ section film
 setup
 ============ */
 .section__film {
-    border: 5px black solid;
+    border: 1px black solid;
     height: 2500px;
     width: 100%;
     background-color: var(--color-bg-section);
+    position: static;
 }
 
-.section__div__gardiens {
-    border: blue 3px solid;
+.section__film__titreh2 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.section__div__gardiens, 
+.section__div__ironman,
+.section__div__blackwidow {
     width: 100%;
     height: 250px;
-    /* display: inline-block; */
-    /* text-align: center; */
-    padding: 15px;
-    /* margin: 0; */
-    /* vertical-align: center; */
+    padding: 35px;
 }
 
-.section__gardiens__img {
+.section__gardiens__img,
+.section__ironman__img,
+.section__bw__img {
     display: inline-block;
     width: 140px;
     height: 200px;
-    /* width: auto; */
+    vertical-align: top;
+}
+
+.section__divdiv__titre {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
 }
 
 .section__gardiens__titre {
-    display: inline-block;
+    display: block;
+    margin: 0 0 5px 0;
 }
 
-/* .section__div__gardiens p{
-    width: 50%;
-} */
+
+/* ========================
+section les réalisateurs
+setup
+======================== */
+
