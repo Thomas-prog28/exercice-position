@@ -141,7 +141,9 @@ setup
 .section__div__gardiens, 
 .section__div__ironman,
 .section__div__blackwidow,
-.section__div__jf {
+.section__div__jf,
+.section__div__russo,
+.section__div__waititi {
     width: 100%;
     height: 250px;
     padding: 35px;
@@ -150,16 +152,20 @@ setup
 .section__gardiens__img,
 .section__ironman__img,
 .section__bw__img,
-.section__jf__img {
+.section__jf__img,
+.section__russo__img, 
+.section__tw__img {
     display: inline-block;
     width: 140px;
     height: 200px;
     vertical-align: top;
 }
 
+
+
 .section__divdiv__titre {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: ;
     margin-left: 15px;
 }
 
